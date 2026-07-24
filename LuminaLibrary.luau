@@ -6728,7 +6728,7 @@ DropdownTab = (function()
     			self._badgeLabel = badgeLbl
     		end
     		(self._badgeLabel :: TextLabel).Text = tostring(math.min(count, 99))
-    		(self._badge :: Frame).Visible = true
+    		;(self._badge :: Frame).Visible = true
     	else
     		if self._badge then
     			(self._badge :: Frame).Visible = false
