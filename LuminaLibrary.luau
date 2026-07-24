@@ -1,3 +1,9 @@
+local script = (typeof(script) == "Instance" and script) or setmetatable({}, {
+    __index = function(self, key)
+        if key == "Parent" then return self end
+        return function() return self end
+    end
+})
 --!strict
 -- LuminaUI Framework - Single File Bundle
 
